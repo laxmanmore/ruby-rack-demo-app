@@ -1,5 +1,4 @@
 require './application'
-require './database'
 
 use Rack::Reloader, 0
 
