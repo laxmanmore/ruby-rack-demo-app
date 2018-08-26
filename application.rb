@@ -14,7 +14,6 @@ class Application
 
   def respond_to_request(request)
     response = Rack::Response.new
-    response.headers['Content-Type'] = 'application/json'
     if request.path_info == '/' || request.path_info == '/users'
       # response.status = 200 #no need to set, bec default is 200
       get_all_users(response)
